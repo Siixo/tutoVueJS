@@ -1,36 +1,25 @@
 <template>
-  <div class="h-screen flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center">
     <h1
-      class="bg-gradient-to-tr from-emerald-700 to-sky-400 bg-clip-text text-transparent text-9xl font-extrabold mb-8 p-8"
+      class="bg-gradient-to-r from-emerald-400 to-sky-500 bg-clip-text text-transparent text-9xl font-extrabold mb-8 py-20 text-center"
     >
-      Tutoriel Vue.js
+      Vue.js
     </h1>
   </div>
 
-  <div class="w-full border-t-1 border-white my-2 opacity-30"></div>
-  <div class="w-full border-t-1 border-white my-2 opacity-30"></div>
   <div class="p-6 flex flex-col items-center justify-center gap-4">
     <a
       target="_blank"
       class="inline-block rounded-sm border border-emerald-400 bg-emerald-600 px-12 py-3 text-md font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
       href="https://vuejs.org/guide/quick-start.html"
     >
-      Doc Officielle Vue.js
+      Documentation Vue.js
     </a>
   </div>
   <div class="w-full border-t-1 border-white my-2 opacity-30"></div>
   <div class="w-full border-t-1 border-white my-2 opacity-30"></div>
-  <div class="p-6">
-    <Exercice1 />
-  </div>
-  <div class="w-full border-t-1 border-white my-2 opacity-30"></div>
-  <div class="w-full border-t-1 border-white my-2 opacity-30"></div>
-  <div class="p-6">
-    <Exercice2 />
-  </div>
 </template>
 
 <script setup>
-import Exercice1 from "../components/Exercice1.vue";
-import Exercice2 from "../components/Exercice2.vue";
+
 </script>

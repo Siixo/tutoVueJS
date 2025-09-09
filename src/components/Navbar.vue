@@ -6,8 +6,9 @@
       </div>
       <div class="flex flex-1 justify-center">
         <ul class="menu menu-horizontal p-2 gap-4 text-lg">
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/">Accueil</router-link></li>
+          <li><router-link to="/exercices">Exercices</router-link></li>
+          <li><router-link to="/about">Informations </router-link></li>
           <li><a>Contact</a></li>
         </ul>
       </div>
