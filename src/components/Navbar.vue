@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import router from "../router";
+</script>
+
 <template>
   <div class="border-b-1 border-white">
     <nav class="navbar bg-gray-800 text-white px-4">
@@ -9,8 +13,7 @@
           <li><router-link to="/">Accueil</router-link></li>
           <li><router-link to="/cours">Cours</router-link></li>
           <li><router-link to="/exercices">Exercices</router-link></li>
-          <li><router-link to="/about">Informations </router-link></li>
-          <li><a>Contact</a></li>
+          <li><router-link to="/contact">Contact</router-link></li>
         </ul>
       </div>
       <div class="flex flex-1 justify-end px-4">

@@ -1,15 +1,15 @@
 import { createMemoryHistory, createRouter } from "vue-router";
 
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
 import Exercices from "../views/Exercices.vue";
 import Cours from "../views/Cours.vue";
+import Contact from "../views/Contact.vue";
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/about", component: About },
-  {path: "/exercices", component: Exercices},
-  {path: "/cours", component: Cours }
+  { path: "/exercices", component: Exercices },
+  { path: "/cours", component: Cours },
+  { path: "/contact", component: Contact },
 ];
 
 export const router = createRouter({
