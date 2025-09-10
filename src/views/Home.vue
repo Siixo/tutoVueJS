@@ -4,7 +4,7 @@
       class="bg-gradient-to-r from-emerald-400 to-sky-500 bg-clip-text text-transparent text-9xl font-extrabold mb-8 py-20 text-center"
     >
       Vue.js
-    </h1>
+  </h1>
   </div>
 
   <div class="p-6 flex flex-col items-center justify-center gap-4">

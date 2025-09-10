@@ -2,11 +2,12 @@
   <div class="border-b-1 border-white">
     <nav class="navbar bg-gray-800 text-white px-4">
       <div class="flex flex-1 justify-between">
-        <a class="btn btn-ghost normal-case text-xl">My App</a>
+        <a class="btn btn-ghost normal-case text-xl">VueJS</a>
       </div>
       <div class="flex flex-1 justify-center">
         <ul class="menu menu-horizontal p-2 gap-4 text-lg">
           <li><router-link to="/">Accueil</router-link></li>
+          <li><router-link to="/cours">Cours</router-link></li>
           <li><router-link to="/exercices">Exercices</router-link></li>
           <li><router-link to="/about">Informations </router-link></li>
           <li><a>Contact</a></li>
