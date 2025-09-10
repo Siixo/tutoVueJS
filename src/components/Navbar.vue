@@ -6,7 +6,7 @@ import router from "../router";
   <div class="border-b-1 border-white">
     <nav class="navbar bg-gray-800 text-white px-4">
       <div class="flex flex-1 justify-between">
-        <a class="btn btn-ghost normal-case text-xl">VueJS</a>
+        <a class="btn btn-ghost normal-case text-xl">Cours VueJS</a>
       </div>
       <div class="flex flex-1 justify-center">
         <ul class="menu menu-horizontal p-2 gap-4 text-lg">
