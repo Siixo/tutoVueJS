@@ -2,8 +2,9 @@
   <!-- Exercice 1 -->
   <div class="mx-auto min-w-md max-w-lg m-10">
     <div
-      class="bg-gray-700 text-white p-6 rounded-lg shadow-lg border-1 border-white flex flex-col items-center justify-center"
+      class="bg-base-100 text-white p-6 rounded-lg shadow-lg border-1 border-white flex flex-col items-center justify-center"
     >
+    <h1 class="text-2xl border-1 border-white p-2 px-8">Exercices</h1>
       <div class="w-3/4 border-t border-white my-4 opacity-30"></div>
       <div class="w-full border-t border-white my-4 opacity-30"></div>
 

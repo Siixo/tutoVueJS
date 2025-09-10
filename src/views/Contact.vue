@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-700 flex flex-col justify-center items-center mx-auto gap-4 p-10 rounded-2xl"
+    class="bg-base-100 flex flex-col justify-center items-center mx-auto gap-4 p-10 rounded-2xl"
   >
     <h1 class="font-bold text-2xl">Nicolas Knittel</h1>
     <img class="w-42 h-42 rounded-full" src="/nico.jpeg" />
