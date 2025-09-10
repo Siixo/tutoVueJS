@@ -4,7 +4,7 @@
     <div
       class="bg-base-100 text-white p-6 rounded-lg shadow-lg border-1 border-white flex flex-col items-center justify-center"
     >
-    <h1 class="text-2xl border-1 border-white p-2 px-8">Exercices</h1>
+      <h1 class="text-2xl border-1 border-white p-2 px-8">Exercices</h1>
       <div class="w-3/4 border-t border-white my-4 opacity-30"></div>
       <div class="w-full border-t border-white my-4 opacity-30"></div>
 
@@ -112,14 +112,23 @@
       <div class="w-3/4 border-t border-white my-4 opacity-30"></div>
 
       <!-- Exercice 4 -->
-      <h1 class="text-lg font-bold mb-4">Exercice 4:</h1> 
-      <input class="mb-2 text-center border-1 border-white p-1" v-model="inputValue" type="text" placeholder="Taper quelque chose">
-      </input>
-      <span class="block my-2 break-all w-full text-center">{{ inputValue }}</span>
-      <input class="my-2 text-center opacity-80 border-1 border-white p-1" v-model="inputValue2" v-on:keypress.enter="setInputValue" placeholder="Entrer du texte ici">
-      
-      </input>
-      <span class="my-2 ">{{ inputValueDisplay }}</span>
+      <h1 class="text-lg font-bold mb-4">Exercice 4:</h1>
+      <input
+        class="mb-2 text-center border-1 border-white p-1"
+        v-model="inputValue"
+        type="text"
+        placeholder="Taper quelque chose"
+      />
+      <span class="block my-2 break-all w-full text-center">{{
+        inputValue
+      }}</span>
+      <input
+        class="my-2 text-center opacity-80 border-1 border-white p-1"
+        v-model="inputValue2"
+        v-on:keypress.enter="setInputValue"
+        placeholder="Entrer du texte ici"
+      />
+      <span class="my-2">{{ inputValueDisplay }}</span>
     </div>
   </div>
 </template>
@@ -153,7 +162,7 @@ const inputValue: string = ref("");
 const inputValue2: string = ref("");
 const inputValueDisplay: string = ref("");
 
-function setInputValue(){
+function setInputValue() {
   inputValueDisplay.value = inputValue2.value;
 }
 </script>

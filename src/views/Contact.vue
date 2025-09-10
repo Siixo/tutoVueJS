@@ -5,12 +5,12 @@
     <h1 class="font-bold text-2xl">Nicolas Knittel</h1>
     <img class="w-42 h-42 rounded-full" src="/nico.jpeg" />
     <h2 class="text-md break-normal">nicolas.knittel@proton.me</h2>
-    <p>
-      Programmeur web hors pair, capable de transformer des lignes de code en
+    <p class="text-justify">
+        Programmeur web hors pair, capable de transformer des lignes de code en
       expériences numériques époustouflantes. Son talent pour manier HTML, CSS
       et JavaScript est simplement légendaire, et il invente des solutions là où
       d’autres voient des problèmes insolubles. Chaque projet qu’il touche
-      devient intuitif, fluide et innovant, redéfinissant les standards du web
+      devient intuitif, fluide et innovant, redéfinissant les standards du web (pas du tout)
       moderne. <br></br>Notes : <br></br>10/10, l'homme qui parlait à l'oreille de VS Code <br></br> 9/10, ses commits rendent mes journées plus lumineuses.<br></br>11/10,
       je soupçonne qu’il parle aux navigateurs dans son sommeil.
     </p>

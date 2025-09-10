@@ -1,10 +1,9 @@
 <template>
-    <div>
-        <Exercice1 />
-    </div>
-    
+  <div>
+    <Exercices />
+  </div>
 </template>
 
 <script setup>
-    import Exercice1 from "../components/Exercice1.vue";
+import Exercices from "../components/Exercices.vue";
 </script>
