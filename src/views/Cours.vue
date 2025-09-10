@@ -1,23 +1,32 @@
 <template>
-    <attributeBinding />
-    <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
-    <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
-    <inlineTemplating />
+  <attributeBinding />
 
-    <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
-    <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
-    <textInterpolation />
-    
-    <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
-    <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
 
-    <eventBinding />
+  <inlineTemplating />
+
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+
+  <textInterpolation />
+
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+
+  <eventBinding />
+
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+  <div class="w-full border-t-1 border-white my-4 opacity-30"></div>
+
+  <computedProperties />
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import attributeBinding from '../components/attribute-binding.vue';
-import inlineTemplating from '../components/inline-templating.vue';
-import textInterpolation from '../components/text-interpolation.vue';
-import eventBinding from '../components/event-binding.vue';
+import { ref } from "vue";
+import attributeBinding from "../components/cours/attribute-binding.vue";
+import inlineTemplating from "../components/cours/inline-templating.vue";
+import textInterpolation from "../components/cours/text-interpolation.vue";
+import eventBinding from "../components/cours/event-binding.vue";
+import computedProperties from "../components/cours/computed-properties.vue";
 </script>

@@ -37,7 +37,7 @@
       <h1 class="text-lg font-bold mb-2">Exercice 3:</h1>
 
       <div class="flex items-center gap-4">
-        <a @click.stop.prevent="count -= 12" class="hover:cursor-pointer">
+        <button @click.prevent="decrement" class="hover:cursor-pointer">
           <svg
             class="h-8 w-8"
             viewBox="0 0 32 32"
@@ -71,9 +71,9 @@
               </g>
             </g>
           </svg>
-        </a>
+        </button>
         <p>Count: {{ count }}</p>
-        <a @click.prevent="count += 12" class="hover:cursor-pointer">
+        <button @click.prevent="increment" class="hover:cursor-pointer">
           <svg
             class="h-8 w-8"
             viewBox="0 0 32 32"
@@ -106,7 +106,7 @@
               </g>
             </g>
           </svg>
-        </a>
+        </button>
       </div>
       <div class="w-full border-t border-white my-4 opacity-30"></div>
       <div class="w-3/4 border-t border-white my-4 opacity-30"></div>
@@ -134,8 +134,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-let count = ref(0);
+import { ref, watch } from "vue";
 
 let name1: string = "Jean";
 let name2: string = "Pierre";
@@ -165,4 +164,20 @@ const inputValueDisplay: string = ref("");
 function setInputValue() {
   inputValueDisplay.value = inputValue2.value;
 }
+
+const count = ref(0);
+
+function increment() {
+  count.value++;
+}
+
+function decrement() {
+  count.value--;
+}
+
+watch(count, (newVal) => {
+  if (newVal > 20) {
+    count.value = 0;
+  }
+});
 </script>
