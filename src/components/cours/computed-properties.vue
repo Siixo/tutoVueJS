@@ -4,7 +4,7 @@
       <h1 class="text-4xl md:text-5xl font-extrabold text-white">
         Les Computed Properties dans Vue.js
       </h1>
-      <p class="text-lg md:text-xl text-base-content opacity-75 mt-2">
+      <p class="text-lg md:text-xl opacity-75 mt-2 text-white">
         Les Computed Properties sont utilisées pour calculer des valeurs
         dérivées de façon réactive et optimisée.
       </p>

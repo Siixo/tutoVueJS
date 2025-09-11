@@ -5,7 +5,7 @@
         L'interpolation de texte dans Vue.js
       </h1>
       <p
-        class="text-lg md:text-xl text-base-content opacity-75 mt-2 max-w-2xl mx-auto"
+        class="text-lg md:text-xl text-white opacity-75 mt-2 max-w-2xl mx-auto"
       >
         L'interpolation permet d'insérer dynamiquement des valeurs JavaScript
         dans le DOM.

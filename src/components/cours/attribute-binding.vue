@@ -5,7 +5,7 @@
         Apprendre la directive <code class="text-secondary">v-bind</code>
       </h1>
       <p
-        class="text-lg md:text-xl text-base-content opacity-75 mt-2 max-w-2xl mx-auto"
+        class="text-lg md:text-xl opacity-75 mt-2 max-w-2xl mx-auto text-white"
       >
         La directive `v-bind` permet de lier dynamiquement des attributs HTML à
         des données Vue.

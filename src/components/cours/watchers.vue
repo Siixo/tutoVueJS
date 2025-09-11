@@ -4,7 +4,7 @@
       <h1 class="text-4xl md:text-5xl font-extrabold text-white">
         Les Watchers dans Vue.js
       </h1>
-      <p class="text-lg md:text-xl text-base-content opacity-75 mt-2">
+      <p class="text-lg md:text-xl text-white opacity-75 mt-2">
         Les watchers permettent d'observer et de réagir aux changements des
         données réactives, parfaits pour gérer des effets secondaires ou
         effectuer des tâches asynchrones.

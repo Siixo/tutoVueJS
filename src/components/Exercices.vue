@@ -2,7 +2,7 @@
   <!-- Exercice 1 -->
   <div class="mx-auto min-w-md max-w-lg m-10">
     <div
-      class="bg-base-100 text-white p-6 rounded-lg shadow-lg border-1 border-white flex flex-col items-center justify-center"
+      class="bg-gray-800 text-white p-6 rounded-lg shadow-lg border-1 border-white flex flex-col items-center justify-center"
     >
       <h1 class="text-2xl border-1 border-white p-2 px-8">Exercices</h1>
       <div class="w-3/4 border-t border-white my-4 opacity-30"></div>
@@ -129,12 +129,54 @@
         placeholder="Entrer du texte ici"
       />
       <span class="my-2">{{ inputValueDisplay }}</span>
+
+      <div class="w-full border-t border-white my-4 opacity-30"></div>
+      <div class="w-3/4 border-t border-white my-4 opacity-30"></div>
+
+      <!-- Exercice 5 -->
+
+      <div
+        :style="dynamicStyle"
+        class="border-1 border-white bg-white p-4 rounded-2xl"
+      >
+        <button
+          @click="changeColor"
+          class="p-2 border-white border-1 rounded-2xl bg-red-600 hover:cursor-pointer"
+        >
+          Cliquer ici pour changer le style
+        </button>
+      </div>
+      <button
+        :class="isActive ? 'text-red-500' : 'text-blue-500'"
+        @click="isActive = !isActive"
+      >
+        Cliquer ici
+      </button>
+      <div
+        :class="[
+          'rounded-2xl p-8 flex flex-col h-64 transition-colors',
+          isDark ? 'bg-black' : 'bg-white',
+        ]"
+      >
+        <h1 :class="['m-4', isDark ? 'text-white' : 'text-black']">
+          C'est une carte dynamique
+        </h1>
+        <button
+          @click="isDark = !isDark"
+          :class="[
+            'bg-black rounded-2xl p-4 m-2 mt-auto hover:cursor-pointer',
+            isDark ? 'bg-white text-black' : 'bg-black text-white',
+          ]"
+        >
+          Dark mode
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { ref, watch, type Ref } from "vue";
 
 let name1: string = "Jean";
 let name2: string = "Pierre";
@@ -157,9 +199,9 @@ function getRandomInt() {
   return Math.floor(Math.random() * 10);
 }
 
-const inputValue: string = ref("");
-const inputValue2: string = ref("");
-const inputValueDisplay: string = ref("");
+const inputValue = ref("");
+const inputValue2 = ref("");
+const inputValueDisplay = ref("");
 
 function setInputValue() {
   inputValueDisplay.value = inputValue2.value;
@@ -180,4 +222,20 @@ watch(count, (newVal) => {
     count.value = 0;
   }
 });
+
+interface DynamicStyle {
+  color: string;
+}
+
+const dynamicStyle: Ref<dynamicStyle> = ref({
+  color: "white",
+});
+
+function changeColor() {
+  dynamicStyle.value.color =
+    dynamicStyle.value.color === "white" ? "green" : "white";
+}
+
+const isActive = ref(false);
+const isDark = ref(false);
 </script>
