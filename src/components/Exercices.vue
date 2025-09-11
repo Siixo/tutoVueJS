@@ -171,6 +171,17 @@
           Dark mode
         </button>
       </div>
+      <div class="flex flex-col items-center p-4 m-4">
+        <input
+          v-model="color"
+          @keypress.enter="setColor"
+          class="p-2 border border-white"
+          placeholder="Entrer une couleur"
+        />
+        <p :style="{ color: textColor }" class="p-4 m-4">
+          Ce texte change de couleur (normalement)/p>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -238,4 +249,11 @@ function changeColor() {
 
 const isActive = ref(false);
 const isDark = ref(false);
+
+const color = ref("");
+const textColor = ref("black");
+
+function setColor() {
+  textColor.value = color.value;
+}
 </script>
